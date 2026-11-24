@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body ke background ke liye use karte hai */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9aaec8;
+    padding: 20px;
+}
+
+/* Main container hai ye  */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #203b50;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #203b50;
+    margin-bottom: 15px;
+}
+
+/* Input aur dropdown */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e2dddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Add button */
+button {
+    padding: 12px 18px;
+    background-color: #b5cce3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #ff6016;
+}
+
+.expense-form {
+    margin-bottom: 25px;
+}
+
+/* Total expence box */
+.total-box {
+    background-color: #e6fff2;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.total-box h3 {
+    color: #1985d2;
+    font-size: 25px;
+}
+
+/* Filter section */
+.filter-box {
+    margin-bottom: 20px;
+}
+
+.filter-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Expense list */
+#expenseList {
+    list-style: none;
+}
+
+#expenseList li {
+    background-color: #dbb3b3;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #c3cfdc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Expense details */
+.expense-info {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #e5b935;
+    padding: 8px 12px;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background-color: #820505;
+}
+
+/* Mobile screen ke liye */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 18px;
+        margin: 10px auto;
+    }
+
+    #expenseList li {
+        align-items: flex-start;
+    }
+}
